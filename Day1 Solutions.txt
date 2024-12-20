@@ -1,0 +1,40 @@
+1. What are optional variable in Swift
+
+	In Swift we have 2 types of variables, 1. variables 2. Optional variables
+	
+	1. Variables -> we cannot assign nil to regular variables. We can regular variables implicitly and explicitly
+	2. Optional variables -> we can assign nil to these variables and can only be declared as explicitly
+		Syntax -> var name:String? = "John"
+				name = nil // if you want to assign nil you can for optional variable
+
+2. what is type safety
+
+	Type safety is nothing but once you declared any variable as a certain datatype you cannot assign different datatype value to that variable. Non optional variables cannot be assigned nil(this case comes under type safety too).
+
+
+3. how to create explict and implict variables
+	
+	Explicit(Optional variable) --> Syntax -> var name:String? = "John"
+	Implicit --> Syntax  -> var name = "John"
+	Explicit(Non Optional Variable)  --> Syntac ->  var name:String = "John"
+
+4. diff b/w if let and guard let
+	->These are used for optional binding(unwrapping the optional variable cause inside they are stored as wrapped with optional)
+	 if let --> if let block, we unwrap number and bind its unwrapped value to value
+
+5. what is optional binding and different ways
+
+	->  optional binding(unwrapping the optional variable cause inside they are stored as wrapped with optional)
+
+	Three ways to unwarp 1. if let 2. nil coalescing 3. Guard Let
+
+6. syntax of for loop
+
+For indexing-> 	for i in 0..100{
+------statements 
+}
+
+For direct value access such as name array names = ["A","B", "C"]
+for name in names{
+print(name)
+}
